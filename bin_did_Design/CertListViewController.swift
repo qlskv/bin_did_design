@@ -2,7 +2,7 @@
 //  CertListViewController.swift
 //  ezDIDHolder
 //
-//  Created by 이순빈 on 2021/07/28.
+//  Created by bin on 2021/07/28.
 //
 import UIKit
 
