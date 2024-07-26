@@ -2,9 +2,9 @@
 //  Extension.swift
 //  ezDIDHolder
 //
-//  Created by 이순빈 on 2021/08/26.
+//  Created by bin on 2021/08/26.
 //
-//2021-08-27, 이순빈, Border 스타일을 위한 Extension
+//2021-08-27, bin, Border 스타일을 위한 Extension
 import UIKit
 
 extension UIView {
