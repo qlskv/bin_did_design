@@ -8,10 +8,10 @@
 import UIKit
 
 let kBarHeight: CGFloat = 80.0;
-//2021-07-27, 이순빈, 메뉴 스토리보드 탭바 컨트롤러 추가
+//2021-07-27, bin, 메뉴 스토리보드 탭바 컨트롤러 추가
 class MainTabBarController: UITabBarController {
     var index: Int? = 0
-    //2021-09-06, 이순빈, MainTabBar Navigation겹침 버그 개선
+    //2021-09-06, bin, MainTabBar Navigation겹침 버그 개선
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -28,7 +28,7 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         navigationItem.hidesBackButton = true
         super.viewDidLoad()
-        //2021-07-29, 이순빈, 앱 로드 시 메인 탭 중 1번째 탭으로 이동하게 설정.
+        //2021-07-29, bin, 앱 로드 시 메인 탭 중 1번째 탭으로 이동하게 설정.
         self.selectedIndex = index!
         self.tabBar.backgroundColor = UIColor.clear
         self.navigationController?.setNavigationBarHidden(true, animated: true)
