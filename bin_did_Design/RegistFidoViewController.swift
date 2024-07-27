@@ -6,7 +6,7 @@
 //
 
 import UIKit
-// 2021-08-21, 이순빈 생체인증 UI개선사항 적용 중
+// 2021-08-21, bin 생체인증 UI개선사항 적용 중
 class RegistFidoViewController: UIViewController {
     // MARK: - Properties
 
