@@ -12,7 +12,7 @@ class CertListViewController: UIViewController {
     let certList: [String] = ["코로나19예방접종 증명서", "코로나19예방접종 증명서", "분당서울대학교 병원진료증", "코로나19예방접종 증명서", "코로나19예방접종 증명서", "코로나19예방접종 증명서", "코로나19예방접종 증명서", "분당서울대학교 병원진료증", "분당서울대학교 병원진료증", "한글"] // data
     
     @IBOutlet var searchbar: UISearchBar!
-    // 2021-08-03, 이순빈, CertList화면 CollectionView적용
+    // 2021-08-03, bin, CertList화면 CollectionView적용
     @IBOutlet var enableCertCount: UILabel!
     @IBOutlet var collectionView: UICollectionView!
     
@@ -29,7 +29,7 @@ class CertListViewController: UIViewController {
         collectionView.dataSource = self
         searchbar.delegate = self
         selectedText = certList
-        // 2021-08-06, 이순빈, search bar 기능 추가
+        // 2021-08-06, bin, search bar 기능 추가
         let searchController = UISearchController(searchResultsController: nil)
     }
 }
@@ -61,7 +61,7 @@ extension CertListViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
-    // 2021-08-06, 이순빈, webkit test 중
+    // 2021-08-06, bin, webkit test 중
     @objc func viewdetail(sender: UIButton) {
         var description: String!
         print(sender.tag)
@@ -94,7 +94,7 @@ extension CertListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
-    // 2021-09-01, 이순빈, CertList화면 개선 중
+    // 2021-09-01, bin, CertList화면 개선 중
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             let width = collectionView.frame.width / 2 - 1
@@ -108,7 +108,7 @@ extension CertListViewController: UICollectionViewDelegateFlowLayout {
         }
     }
 
-// 2021-08-06, 이순빈, search bar 기능 추가
+// 2021-08-06, bin, search bar 기능 추가
 extension CertListViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         enableCertCount.text = String(selectedText.count)
