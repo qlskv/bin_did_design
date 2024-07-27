@@ -2,7 +2,7 @@
 //  NumberPadView.swift
 //  ezDIDHolder
 //
-//  Created by 이진호 on 2021/07/10.
+//  Created by bin on 2021/07/10.
 //
 
 import UIKit
